@@ -1,0 +1,31 @@
+{
+  "objects": [
+    {"type": "type1",
+      "hist": [1, 1, 1]
+    },
+    {"type": "type1",
+      "hist": [1, 1, 0]
+    },
+    {"type": "type1",
+      "hist": [1, 0, 1]
+    },
+    {"type": "type2",
+      "hist": [8, 9, 10]
+    },
+    {"type": "type2",
+      "hist": [6, 7, 8]
+    },
+    {"type": "type2",
+      "hist": [10, 11, 11]
+    },
+    {"type": "type3",
+      "hist": [-10, -11, -12]
+    },
+    {"type": "type3",
+      "hist": [-10, -10, -12]
+    },
+    {"type": "type3",
+      "hist": [-10, -11, -11]
+    }
+  ]
+}
