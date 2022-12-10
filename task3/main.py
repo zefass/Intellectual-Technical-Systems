@@ -19,12 +19,12 @@ class NNClassifier:
         for type in sortdists.values():
             types[type]+=1
         sortedval = sorted(types.items(), key=operator.itemgetter(1))
-        reqtype = {type for type, value in sortedval[2:]}
+        reqtype = {type for type, value in sortedval[-1:]}
         return reqtype
     @staticmethod
     def histdist(hist1, hist2):
         dist = scipy.spatial.distance.euclidean(hist2, hist1)
         return dist
-hist = [3, 4, 5]
+hist = [10, 10, 10]
 NNC = NNClassifier('objects.json')
 print(NNC.deftype(hist, 3))
