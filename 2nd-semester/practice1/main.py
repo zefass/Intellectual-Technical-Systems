@@ -58,7 +58,7 @@ def find_similar(text, model):
         sentence2vector = avg_feature_vector(
             text_edit(value['text']), model=model, num_features=100, index2word_set=index2word_set)
         sim = spatial.distance.cosine(sentence1vector, sentence2vector)
-        dists.append((sim, value['type']))
+        dists.append(sim, value['type'])
     min_dist, min_text = min(dists, key=lambda x: x[0])
     print(min_text)
 
